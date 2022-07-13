@@ -11,12 +11,12 @@ import java.util.List;
  */
 public interface UmsAdminCacheService {
     /**
-     * 删除后台用户缓存
+     * delete background user cache
      */
     void delAdmin(Long adminId);
 
     /**
-     * 删除后台用户资源列表缓存
+     *delete background user resource list cache
      */
     void delResourceList(Long adminId);
 

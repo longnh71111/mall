@@ -29,7 +29,7 @@ CREATE TABLE `cms_help` (
   `read_count` int(1) DEFAULT NULL,
   `content` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='帮助表';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='help sheet';
 
 -- ----------------------------
 -- Records of cms_help
@@ -42,12 +42,12 @@ DROP TABLE IF EXISTS `cms_help_category`;
 CREATE TABLE `cms_help_category` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) DEFAULT NULL,
-  `icon` varchar(500) DEFAULT NULL COMMENT '分类图标',
-  `help_count` int(11) DEFAULT NULL COMMENT '专题数量',
+  `icon` varchar(500) DEFAULT NULL COMMENT 'Category icon',
+  `help_count` int(11) DEFAULT NULL COMMENT 'Number of topics',
   `show_status` int(2) DEFAULT NULL,
   `sort` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='帮助分类表';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='help taxonomy';
 
 -- ----------------------------
 -- Records of cms_help_category
